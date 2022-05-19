@@ -17,10 +17,24 @@ ul a{
                         da altura da imagem de fundo*/
     width: 200px;
     height: 40px; /*Altura*/
-    background: url(../img/menu.png);
+    background: #f7b600 url(../img/menu.png); /* Adicione antes uma cor antes do url, para qque se caso a
+    imagem não abrir, ele irar usar a cor*/
 }
 
 a:hover{
     background-position: right bottom;
+    background-color: #f99200; /*Aqui caso a imagem não carregue*/
+    color: white;
+}
+
+/*Ao selecionar será marcado*/
+/*Pode ser que exista varios menu, é indicado colocar um id na ul*/
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a,
+#noticias #navegacao .noticias a,
+#contato #navegacao  .contato a{
+    background-position: right bottom;
+    background-color: #f99200; /*Aqui caso a imagem não carregue*/
     color: white;
 }
